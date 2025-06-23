@@ -99,6 +99,7 @@ body {
     padding: 0.5rem;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 .button-div a:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
