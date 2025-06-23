@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.barra-superior {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.barra-superior-dos {
+    width: 70%;
+}
+.contenedor-logo {
+    /* border: 1rem solid black; */
+    min-width: 5rem;
+}
+.barra-superior figure {
+    display: flex;
+    align-items: center;
+}
+.fondo {
+    background-color: #f25e07;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.fondo p {
+    padding: .5rem .5rem .5rem 0;
+}
+.fondo a {
+    padding-left: .5rem;
+}
+.logo {
+    height: auto;
+    min-width: 5rem;
+    max-width: 15rem;
+}
+.perro {
+    height: 1.5rem;
+    margin-right: .5rem;
+}
+.redes {
+    display: flex;
+    align-items: center;
+}
+/* encabezado */
+
+.encabezado {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    /* min-height: 600px; */
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.bloques-encabezado {
+    height: auto;
+    /* min-width: 4rem; */
+    max-width: 25rem;
+}
+
+.cuerpo-encabezado h1 {
+    font-size: 2.5rem;
+}
+.cuerpo-encabezado p {
+    font-size: 1.2rem;
+}
+.imagen-encabezado img {
+    height: auto;
+    /* min-width: 4rem; */
+    max-width: 20rem;
+}
+.button-div {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.button-div a {
+    height: 2rem;
+    width: auto;
+    background-color: #f25e07;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+    border: #f25e07;
+    border-radius: 0.2rem;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.button-div a:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+.button-div a:active {
+    background-color: #fb7a2f;
+    font-size: 1.3rem;
+}
+/* beneficios bloque */
+
+.beneficios {
+    margin: 2rem auto;
+}
+.lista-de-beneficios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+.beneficios h2, .titulo-dos {
+    text-align: center;
+    font-family: "Montserrat",sans-serif;
+    font-weight: bold;
+    color: #f25e07;
+    font-size: 2.3rem;
+    margin: 3rem 0;
+}
+.bloque-lista-beneficios {
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    /* border: 1px solid red; */
+    min-width: 7rem;
+    max-width: 34rem;
+}
+.bloque-elementos {
+    /* border: 1px solid purple; */
+    margin: 0 auto;
+}
+.bloque-elementos h3 {
+    margin: 0;
+}
+.bloque-lista-beneficios p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+.elementos-lista-bloque {
+    padding: 0.5rem;
+}
+.form-container {
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.input-container {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.input-container input {
+    min-height: 4rem;
+    margin-left: 1rem;
+    min-width: 20%;
+    margin: 2rem;
+    font-size: 1rem;
+    border: 0.1rem solid black;
+    border-radius: 0.2rem;
+}
+.input-container div {
+    display: flex;
+    justify-content: center;
+}
+.input-container input::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contactanos-btn {
+    width: 50%;
+    margin: 0 auto;
+}
+.input-container button {
+    height: auto;
+    min-width: 25%;
+    background-color: #f25e07;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    border: #f25e07;
+    border-radius: 0.2rem;
+    color: white;
+    padding: 0.5rem;
+}
+.footer {
+  background-color: #f25e07;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+}
+@media only screen and (max-width:480px){
+    .barra-superior {
+        flex-direction: column;
+    }
+    .contenedor-logo img {
+        display: flex;
+        max-width: 10rem;
+    }
+    .redes p {
+        display: none;
+    }
+    .redes a {
+        display: flex;
+        padding: 0.5rem;
+    }
+    .cuerpo-encabezado h1 {
+        font-size: 1.5rem;
+        margin: 1rem 1rem;
+    }
+    .cuerpo-encabezado p {
+        font-size: 0.8rem;
+        margin: 1rem 1rem 0;
+    }
+    .button-div button {
+        font-size: 1rem;
+        padding: 0.5rem;
+        width: 50%;
+        height: auto;
+    }
+    .bloque-elementos h3 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .bloque-elementos p {
+        font-size: 0.8rem;
+    }
+    .beneficios h2 {
+        font-size: 1.5rem;
+    }
+    .form-container h2 {
+        font-size: 1.5rem;
+    }
+    .input-container div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .input-container input {
+        font-size: 0.8rem;
+    }
+    .input-container button {
+        height: auto;
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 768px){
+    .input-container input::placeholder {
+        font-size: 0.7rem;
+    }
+}
