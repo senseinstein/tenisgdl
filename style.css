@@ -185,7 +185,7 @@ body {
 .contactanos-btn {
     margin: 0 auto;
 }
-.contactanos-btn::hover {
+.contactanos-btn:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 .input-container button:active {
