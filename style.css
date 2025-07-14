@@ -186,6 +186,12 @@ body {
     width: 50%;
     margin: 0 auto;
 }
+.contactanos-btn::hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    background-color: #fb7a2f;
+    font-size: 1.3rem;
+}
+
 .input-container button {
     height: auto;
     min-width: 25%;
