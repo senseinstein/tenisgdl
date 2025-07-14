@@ -183,15 +183,15 @@ body {
     text-transform: uppercase;
 }
 .contactanos-btn {
-    width: 50%;
     margin: 0 auto;
 }
 .contactanos-btn::hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+.input-container button:active {
     background-color: #fb7a2f;
     font-size: 1.3rem;
 }
-
 .input-container button {
     height: auto;
     min-width: 25%;
@@ -203,6 +203,7 @@ body {
     border-radius: 0.2rem;
     color: white;
     padding: 0.5rem;
+    cursor: pointer;
 }
 .footer {
   background-color: #f25e07;
