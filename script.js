@@ -1,3 +1,4 @@
+console.log('formulario listo');
 (() => {
   const form = document.querySelector('.input-container');
   const start = Date.now(); // anti-spam: tiempo mínimo de llenado
