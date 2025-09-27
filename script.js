@@ -53,4 +53,25 @@
     }
   });
 })();
+    
+// 1) Limpia el campo teléfono en vivo (quita letras)
+const tel = document.querySelector('input[name="telefono"]');
+if (tel) {
+  tel.addEventListener('input', e => {
+    e.target.value = e.target.value.replace(/[^0-9+\s()-]/g, '');
+  });
+}
 
+// 2) Bloquea el envío si algo no es válido y muestra el mensaje nativo
+const form = document.querySelector('form.input-container');
+if (form) {
+  form.addEventListener('submit', (e) => {
+    if (!form.checkValidity()) {
+      e.preventDefault();           // no envía
+      form.reportValidity();        // muestra mensajes del navegador
+      // (Opcional) enfocar el primer inválido:
+      const invalid = form.querySelector(':invalid');
+      invalid && invalid.focus();
+    }
+  });
+}
