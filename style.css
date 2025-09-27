@@ -219,6 +219,16 @@ body {
 .footer-content p {
   margin: 0.5rem 0;
 }
+.error { 
+  color:#c00;
+  font-size:.85rem;
+  display:block;
+  margin-top:4px;
+}
+.invalido {
+  outline:2px solid #c00;
+}
+
 @media only screen and (max-width:480px){
     .barra-superior {
         flex-direction: column;
