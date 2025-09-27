@@ -72,27 +72,50 @@
                 </div>
             </section>
         </section>
-        <section class="form-container">
-            <h2 class="titulo-dos">
-               ¡Contáctanos!
-            </h2>
-            <form action="https://formsubmit.co/ventas@tenisgdl.com" method="POST" class="input-container">
-                <div>
-                    <input type="text" name="nombre" placeholder="nombre completo">
-                    <input type="text" name="telefono" placeholder="NÚMERO DE TELÉFONO">
-                </div>
-                <div>
-                    <input type="text" name="negocio" placeholder="Nombre de tu negocio">
-                    <input type="text" name="ciudad" placeholder="ciudad">
-                </div>
-                <div class="contactanos-btn">
-                     <button>Enviar</button>
-                <input type="hidden" name="_next" value="https://senseinstein.github.io/tenisgdl" >
-                <input type="hidden" name="_captcha" value="false" >
-                </div>
-
+        <section class="form-container"> 
+            <h2 class="titulo-dos">¡Contáctanos!</h2>
+          
+            <form action="https://formsubmit.co/ventas@tenisgdl.com" method="POST" class="input-container" novalidate>
+              <!-- Honeypot anti-spam: los bots lo llenan -->
+              <input type="text" name="_honey" style="display:none">
+          
+              <!-- Opcional: plantilla simple en el correo -->
+              <input type="hidden" name="_template" value="table">
+          
+              <div>
+                <input type="text" name="nombre" placeholder="Nombre completo*" 
+                       required minlength="2" autocomplete="name">
+                <input type="tel"  name="telefono" placeholder="Número de teléfono*" 
+                       required inputmode="tel" autocomplete="tel"
+                       pattern="^[0-9+\s()-]{7,}$" 
+                       title="Usa al menos 7 dígitos. Se permiten + ( ) - y espacios.">
+              </div>
+          
+              <div>
+                <input type="text" name="negocio" placeholder="Nombre de tu negocio*" 
+                       required minlength="2" autocomplete="organization">
+                <input type="text" name="ciudad" placeholder="Ciudad*" 
+                       required minlength="2" autocomplete="address-level2">
+              </div>
+          
+              <!-- (Recomendado) Email para poder responderte directo -->
+              <div>
+                <input type="email" name="_replyto" placeholder="Correo electrónico*" 
+                       required autocomplete="email">
+              </div>
+          
+              <div class="contactanos-btn">
+                <button type="submit">Enviar</button>
+          
+                <!-- Redirección después de enviar -->
+                <input type="hidden" name="_next" value="https://senseinstein.github.io/tenisgdl">
+                <!-- Desactiva captcha de FormSubmit -->
+                <input type="hidden" name="_captcha" value="false">
+                <!-- (Opcional) asunto del correo que recibes -->
+                <input type="hidden" name="_subject" value="Nuevo contacto desde tenisgdl.com">
+              </div>
             </form>
-        </section>
+        </section>          
     </main>
     <footer class="footer">
         <div class="footer-content">
