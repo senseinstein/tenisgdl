@@ -1,128 +1,150 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link rel="icon" href="./favicon-16x16.png" type="image/x-icon">
-    <title>Tenis Guadalajara</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Tenis Guadalajara | Venta de tenis al por mayor</title>
+  <meta name="description" content="Converse y más al mayoreo en Guadalajara. Productos originales, precios competitivos y envíos a todo México. Atención a tiendas dentro y fuera de GDL.">
+
+  <!-- Fuente y favicon -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="./favicon-16x16.png" type="image/x-icon">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Tenis Guadalajara — Mayoreo de calzado">
+  <meta property="og:description" content="Converse y más al mayoreo. Envíos a todo México.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://senseinstein.github.io/tenisgdl/">
+  <meta property="og:image" content="https://senseinstein.github.io/tenisgdl/instagram-logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="barra-superior">
-        <figure class="contenedor-logo">
-            <img class="logo" src="./4_4-sin-fondo.png" alt="">
-        </figure>
-        <div class="barra-superior-dos">
-            <figure class="fondo">
-                <div class="redes">
-                    <a href="https://instagram.com/tenisguadalajara.mx" target="_blank"><img class="perro" src="./instagram-logo.png" alt=""></a>
-                    <p>tenisguadalajara.mx</p>
-                </div>
-                <div class="redes">
-                    <a href="https://www.facebook.com/profile.php?id=61552522465652" target="_blank"><img class="perro" src="./facebook-logo.png" alt=""></a>
-                    <p>tenisguadalajara.mx</p>
-                </div>
-            </figure>
+  <header class="barra-superior">
+    <figure class="contenedor-logo">
+      <img class="logo" src="./4_4-sin-fondo.png" alt="Logotipo Tenis Guadalajara">
+    </figure>
+    <div class="barra-superior-dos">
+      <figure class="fondo">
+        <div class="redes">
+          <a href="https://instagram.com/tenisguadalajara.mx" target="_blank" rel="noopener noreferrer">
+            <img class="perro" src="./instagram-logo.png" alt="Instagram de Tenis Guadalajara" loading="lazy">
+          </a>
+          <p>tenisguadalajara.mx</p>
         </div>
-    </header>
-    <main>
-        <section>
-                <div class="encabezado">
-                    <div class="cuerpo-encabezado bloques-encabezado">
-                        <h1>Compra Converse al por mayor para tu tienda.</h1>
-                        <p>Obtén precios competitivos, productos originales y entrega confiable.</p>
-                    </div>
-                    <div class="imagen-encabezado bloques-encabezado">
-                        <figure>
-                            <img src="./converse-bota.jpg" alt="imagen de bota converse negra">
-                        </figure>
-                    </div>
-                </div>
-                <div class="button-div">
-                    <a href="https://wa.me/message/5Y7EX7NURZA7L1" target="_blank">Solicitar presupuesto</a>
-                </div>
-        </section>
-        <section class="beneficios">
-            <h2>
-                Beneficios de comprar con nosotros
-            </h2>
-            <section class="lista-de-beneficios">
-                <div class="bloque-lista-beneficios">
-                    <div class="bloque-elementos">
-                        <h3 class="elementos-lista-bloque">Precios competitivos</h3>
-                        <p class="elementos-lista-bloque">Sin intermediarios ni sobrecostos: precios directos de distribuidor.</p>
-                    </div>
-                    <div class="bloque-elementos">
-                        <h3 class="elementos-lista-bloque">Producto original</h3>
-                        <p class="elementos-lista-bloque">Sin imitaciones. Solo calidad original para tu tienda.</p>
-                    </div>
-                </div>
-                <div class="bloque-lista-beneficios">
-                    <div class="bloque-elementos">
-                        <h3 class="elementos-lista-bloque">Entrega rápida.</h3>
-                        <p class="elementos-lista-bloque">Sin demoras ni procesos largos: lo preparamos para entregarse cuanto antes.</p>
-                    </div>
-                    <div class="bloque-elementos">
-                        <h3 class="elementos-lista-bloque">Atención personalizada</h3>
-                        <p class="elementos-lista-bloque">Trato directo, agenda una visita para resolver tus dudas.</p>
-                    </div>
-                </div>
-            </section>
-        </section>
-        <section class="form-container"> 
-            <h2 class="titulo-dos">¡Contáctanos!</h2>
-          
-            <form action="https://formsubmit.co/ventas@tenisgdl.com" method="POST" class="input-container">
-              <!-- Honeypot anti-spam: los bots lo llenan -->
-              <input type="text" name="_honey" style="display:none">
-          
-              <!-- Opcional: plantilla simple en el correo -->
-              <input type="hidden" name="_template" value="table">
-          
-              <div>
-                <input type="text" name="nombre" placeholder="Nombre completo*" 
-                       required minlength="2" autocomplete="name">
-                <input type="tel"  name="telefono" placeholder="Número de teléfono*" 
-                       required inputmode="tel" autocomplete="tel"
-                       pattern="^[0-9+\s()-]{7,}$" 
-                       title="Usa al menos 7 dígitos. Se permiten + ( ) - y espacios.">
-              </div>
-          
-              <div>
-                <input type="text" name="negocio" placeholder="Nombre de tu negocio*" 
-                       required minlength="2" autocomplete="organization">
-                <input type="text" name="ciudad" placeholder="Ciudad*" 
-                       required minlength="2" autocomplete="address-level2">
-              </div>
-          
-              <!-- (Recomendado) Email para poder responderte directo -->
-              <div>
-                <input type="email" name="_replyto" placeholder="Correo electrónico*" 
-                       required autocomplete="email">
-              </div>
-          
-              <div class="contactanos-btn">
-                <button type="submit">Enviar</button>
-          
-                <!-- Redirección después de enviar -->
-                <input type="hidden" name="_next" value="https://senseinstein.github.io/tenisgdl">
-                <!-- Desactiva captcha de FormSubmit -->
-                <input type="hidden" name="_captcha" value="false">
-                <!-- (Opcional) asunto del correo que recibes -->
-                <input type="hidden" name="_subject" value="Nuevo contacto desde tenisgdl.com">
-              </div>
-            </form>
-        </section>          
-    </main>
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2025 tenisguadalajara.mx - Todos los derechos reservados</p>
-            <p>Contáctanos por llamada o WhatsApp para atención directa: +52 33-17-39-34-40.</p>
+        <div class="redes">
+          <a href="https://www.facebook.com/profile.php?id=61552522465652" target="_blank" rel="noopener noreferrer">
+            <img class="perro" src="./facebook-logo.png" alt="Facebook de Tenis Guadalajara" loading="lazy">
+          </a>
+          <p>tenisguadalajara.mx</p>
         </div>
-    </footer>
-    <script src="script.js"></script>
+      </figure>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="encabezado">
+        <div class="cuerpo-encabezado bloques-encabezado">
+          <h1>Compra Converse al por mayor para tu tienda.</h1>
+          <p>Obtén precios competitivos, productos originales y entrega confiable.</p>
+        </div>
+        <div class="imagen-encabezado bloques-encabezado">
+          <figure>
+            <img src="./converse-bota.jpg" alt="Converse de bota color negro sobre fondo neutro" loading="lazy">
+          </figure>
+        </div>
+      </div>
+      <div class="button-div">
+        <a href="https://wa.me/message/5Y7EX7NURZA7L1" target="_blank" rel="noopener noreferrer">Solicitar presupuesto</a>
+      </div>
+    </section>
+
+    <section class="beneficios">
+      <h2>Beneficios de comprar con nosotros</h2>
+      <section class="lista-de-beneficios" aria-label="Lista de beneficios">
+        <div class="bloque-lista-beneficios">
+          <div class="bloque-elementos">
+            <h3 class="elementos-lista-bloque">Precios competitivos</h3>
+            <p class="elementos-lista-bloque">Sin intermediarios ni sobrecostos: precios directos de distribuidor.</p>
+          </div>
+          <div class="bloque-elementos">
+            <h3 class="elementos-lista-bloque">Producto original</h3>
+            <p class="elementos-lista-bloque">Sin imitaciones. Solo calidad original para tu tienda.</p>
+          </div>
+        </div>
+        <div class="bloque-lista-beneficios">
+          <div class="bloque-elementos">
+            <h3 class="elementos-lista-bloque">Entrega rápida</h3>
+            <p class="elementos-lista-bloque">Sin demoras ni procesos largos: lo preparamos para entregarse cuanto antes.</p>
+          </div>
+          <div class="bloque-elementos">
+            <h3 class="elementos-lista-bloque">Atención personalizada</h3>
+            <p class="elementos-lista-bloque">Trato directo, agenda una visita para resolver tus dudas.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="form-container">
+      <h2 class="titulo-dos">¡Contáctanos!</h2>
+
+      <form action="https://formsubmit.co/ventas@tenisgdl.com" method="POST" class="form-section">
+        <!-- Honeypot anti-spam -->
+        <input type="text" name="_honey" style="display:none">
+
+        <!-- Plantilla del correo -->
+        <input type="hidden" name="_template" value="table">
+        <div class="div-input-label-container">
+                <div class="input-label-container">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="nombre" placeholder="juan">
+                </div>
+                <div class="input-label-container">
+                    <label for="numero-de-telefono">Numero de telefono</label>
+                    <input type="number" id="numero-de-telefono" placeholder="+52 (33) - 3719 - 4703">
+                </div>
+        </div>
+        <div class="div-input-label-container">
+            <div class="input-label-container">
+                <label for="name">Nombre de tu negocio</label>
+                <input type="text" id="nombre-de-tu-negocio" placeholder="Tenis Guadalajara">
+            </div>
+            <div class="input-label-container">
+                <label for="ciudad">ciudad</label>
+                <input type="text" id="ciudad" placeholder="Guadalajara">
+            </div>
+        </div>
+        <div class="div-input-label-container">
+            <div class="button-div">
+                <button class="form-button">enviar</button>
+            </div>
+        </div>
+          <!-- Redirección después de enviar -->
+          <input type="hidden" name="_next" value="https://senseinstein.github.io/tenisgdl">
+          <!-- Desactiva captcha de FormSubmit -->
+          <input type="hidden" name="_captcha" value="false">
+          <!-- Asunto del correo -->
+          <input type="hidden" name="_subject" value="Nuevo contacto desde tenisgdl.com">
+          <!-- (Opcional) Autorespuesta -->
+          <input type="hidden" name="_autoresponse" value="¡Gracias! Te contactaremos en breve.">
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 tenisguadalajara.mx - Todos los derechos reservados</p>
+      <p>Contáctanos por llamada o WhatsApp para atención directa: +52 33-17-39-34-40.</p>
+    </div>
+  </footer>
+
+  <!-- Carga tu JS (mantén tu validación actual) -->
+  <script src="script.js" defer></script>
 </body>
 </html>
